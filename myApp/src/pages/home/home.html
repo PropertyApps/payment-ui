@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+
+   <ion-item class="item-h1">
+      <ion-label >PAYMENT</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Action<span class="inpt-required">*</span></ion-label>
+        <ion-select [(ngModel)]="pay_action" class="txtb-default txt-full">
+          <ion-option value="nes">Process the payments now</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Payment method<span class="inpt-required">*</span></ion-label>
+        <ion-select [(ngModel)]="pay_method" class="txtb-default txt-full">
+          <ion-option value="credit">Credit card</ion-option>
+          <ion-option value="debit">Debit card</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+          Card number<span class="inpt-required">*</span>
+         <p class="mini-note">16 digit number on the card<p>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="pay_cardno" name="pay_cardno" class="txtb-default txt-full txtinpt"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        CCV<span class="inpt-required">*</span>
+        <p class="mini-note">Last 3 digits displayed on the back of the card<p>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="pay_ccv" name="pay_ccv" class="txtb-default"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Expiration date<span class="inpt-required">*</span>
+        <p class="mini-note">Displayed infront of the card<p>
+          
+      </ion-label>
+      <ion-datetime displayFormat="MM/YYYY" [(ngModel)]="pay_cardexp" class="txtb-default"></ion-datetime>
+    </ion-item>
+    <span class="inpt-required" padding>* Requied</span>
+    <br/>
+
+    <ion-item class="item-h2">
+      <ion-label>NOTES</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Remarks </ion-label>
+      <ion-input type="text" [(ngModel)]="pay_remarks" name="pay_remarks" class="txtb-default txt-full"></ion-input>
+    </ion-item>
+    <br/>
+    <br/>
+  
+    <input type="radio" name="gender" value="male" class="padding"> I agree to the Terms of Service and Privacy Policy<br>
+    <br/>
+    <button ion-button full class="btn-pay" padding> <ion-icon ios="ios-card" md="md-card"></ion-icon>&nbsp;Pay now</button>
+
+</ion-content>

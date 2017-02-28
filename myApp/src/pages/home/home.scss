@@ -1,0 +1,80 @@
+
+$blue:    	#377FF5;
+$grey:  	  #e3e3e3;
+$black:    #434343;
+$red:      #f45353;
+$orange:   #ff9b52;
+$green:    #2cd06b;
+
+
+$width:208px;
+$max-width:298px;
+
+page-home {
+
+  .item-heading{
+    padding-right: 8px;
+    border-bottom: 0.55px solid transparent;    
+  }
+
+  .label-ios {
+    margin: 17px 8px 6px 0;
+  }
+
+  .item-ios {
+    position: relative;
+    padding-left: 16px;
+    border-radius: 0;
+    font-size: 1.4rem;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 200ms linear;
+  }
+
+	.item-h1{
+      border-bottom: 0.55px solid #377ff5;
+      padding-right: 8px;
+      color:#377FF5;
+      font-weight: normal;
+  }
+
+  .item-h2{
+      border-bottom: 0.55px solid #377ff5;
+      padding-right: 8px;
+      color:#377FF5;
+      font-weight: normal;
+  }
+
+  .txtb-default{
+    background: #e3e3e3;
+    height: 38px;
+    border-radius: 5px;
+  }
+
+  .txt-full{
+    min-width: $width;
+    max-width: $max-width;
+  }
+
+  .mini-note{
+    font-size:12px;
+  }
+
+  .btn-pay{
+    border-radius: 5px;
+    background: #377FF5;
+  }
+
+  .inpt-required{
+    color:#f45353;
+  }
+
+  .label-ios {
+    margin: 25px 2px 7px 0;
+  }
+
+  .txtinpt{
+    margin-top: 10px;
+  }
+  
+}
